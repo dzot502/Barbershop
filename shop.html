@@ -40,28 +40,42 @@
     <main class="container">
       <div class="content-header">
         <h1 class="content-name">Средства для ухода</h1>
-        <nav class="content-navigation">
+        <div class="breadcrumbs">
           <ul>
             <li> <a href="index.html">Главная</a></li>
             <li> <a href="#">Магазин</a></li>
             <li> <a href="#">Средства для ухода</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
       <div class="content-body">
         <form action="filter-item.php">
-          Производители:<br>
-          <input type="checkbox" name="brand1" value="Baxter-of-California" checked>Baxter of California<br>
-          <input type="checkbox" name="brand2" value="Mr-Natty">Mr Natty<br>
-          <input type="checkbox" name="brand3" value="Suavecito" checked>Suavecito<br>
-          <input type="checkbox" name="brand4" value="Malin+Goetz">Malin+Goetz<br>
-          <input type="checkbox" name="brand5" value="Murray's">Murray's<br>
-          <input type="checkbox" name="brand6" value="American-Crew" checked>American Crew<br>
-          Группы товаров:<br>
-          <input type="radio" name="group-item" value="shaving-accessories">Бритвенные принадлежности<br>
-          <input type="radio" name="group-item" value="preparations-care" checked>Средства для ухода<br>
-          <input type="radio" name="group-item"  value="accessories">Аксессуары<br>
+          <fieldset>
+            <legend>Производители:</legend>
+            <input type="checkbox" id="Baxter-of-California" name="brand1" value="Baxter-of-California" checked>
+            <label for="Baxter-of-California">Baxter of California</label><br>
+            <input type="checkbox" id="Mr-Natty" name="brand2" value="Mr-Natty">
+            <label for="Mr-Natty">Mr Natty</label><br>
+            <input type="checkbox" id="Suavecito" name="brand3" value="Suavecito" checked>
+            <label for="Suavecito">Suavecito</label><br>
+            <input type="checkbox" id="Malin+Goetz" name="brand4" value="Malin+Goetz">
+            <label for="Malin+Goetz">Malin+Goetz</label><br>
+            <input type="checkbox" id="Murray's" name="brand5" value="Murray's">
+            <label for="Murray's">Murray's</label><br>
+            <input type="checkbox" id="American-Crew" name="brand6" value="American-Crew" checked>
+            <label for="American-Crew">American Crew</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров:</legend>
+            <input type="radio" id="shaving-accessories" name="group-item" value="shaving-accessories">
+            <label for="shaving-accessories">Бритвенные принадлежности</label><br>
+            <input type="radio" id="preparations-care" name="group-item" value="preparations-care" checked>
+            <label for="preparations-care">Средства для ухода</label><br>
+            <input type="radio" id="accessories" name="group-item"  value="accessories">
+            <label for="accessories">Аксессуары</label><br>
+          </fieldset>
           <input type="submit" value="Показать" class="btn">
+
         </form>
         <table>
         <tr>
